@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify-your favourite music is this</title>
+    <link rel="icon" href="icons/Spotify_icon.svg.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="icons/Spotify_icon.svg.png" alt="spotify" class="icon">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Best of NCS -No Copyright Sounds</h1>
+        <div class="songList">
+            <img src="icons/song1.jpg" alt="Song1">
+            <span>Dancing the falmes</span>
+            <span class="Songlistplay">
+                <span class="timeStamp">
+                    <span class="songDuration">00:00</span>
+                    <img src="icons/circle-play.svg" alt="palybutton" class="songPlay" data-index="0">
+                </span>
+            </span>
+        </div>
+        <div class="songList">
+            <img src="icons/slowlife.jpg" alt="Song1">
+            <span>slow life</span>
+            <span class="Songlistplay">
+                <span class="timeStamp">
+                    <span class="songDuration">00:00</span>
+                    <img src="icons/circle-play.svg" alt="palybutton" class="songPlay" data-index="1">
+                </span>
+            </span>
+        </div>
+        <div class="songList">
+            <img src="icons/yesterday.jpg" alt="Song1">
+            <span>yesteday</span>
+            <span class="Songlistplay">
+                <span class="timeStamp">
+                    <span class="songDuration">00:00</span>
+                    <img src="icons/circle-play.svg" alt="palybutton" class="songPlay" data-index="2">
+                </span>      
+            </span>
+        </div>
+        <div class="songList">
+            <img src="icons/hearty.jpg" alt="Song1">
+            <span>hearty</span>
+            <span class="Songlistplay">
+                <span class="timeStamp">
+                    <span class="songDuration">00:00</span>
+                    <img src="icons/circle-play.svg" alt="palybutton" class="songPlay" data-index="3">
+                </span>        
+            </span>
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+        <div class="song-button">
+            <div class="icons">
+            <img src="icons/angle-left.svg" alt="left Button" id="bottomButton" class="leftButton">
+            <img src="icons/circle-play.svg" alt="play button" id="bottomButton" class="masterPlay">
+            <img src="icons/angle-right.svg" alt="right button" id="bottomButton" class="rightButton">
+           </div>
+           <div class="songName">
+            <img src="icons/music-sounds.gif" alt="musicPlaying gif">
+            <span id="masterSongName">Dancing the Flames</span>
+           </div>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

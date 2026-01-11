@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    font-family: 'Ubuntu','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:65px;
+    background-color: black;
+    color:white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.icon{
+    color:green;
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display:flex;
+    align-items:center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height:75vh;
+    background-color: black;
+    color:white;
+    margin:23px auto; /* auto centers*/
+    width:70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius:12px;
+    padding:34px;
+    background-image: url('icons/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bottom{
+    position:sticky;
+    height:130px;
+    background-color: black;
+    bottom:0;
+    color:white;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+}
+#bottomButton{
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    cursor: pointer;
+}
+.icons{
+    margin-top: 14px;
+}
+.songList{
+    height:50px;
+    width: 55%;
+    display:flex;
+    background-color: white;
+    color:black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:32px;
+
+}
+.songList img{
+    width: 45px;
+    height: 45px;          
+    object-fit: cover;    
+    border-radius: 50%;   /* perfect circle */
+    margin: 0 23px;
+}
+.timeStamp{
+    display: flex;
+    align-items: center;
+}
+.timeStamp img{
+    cursor: pointer;
+}
+.song-button{
+    display: flex;
+    align-items:center;
+}
+.songName{
+    position: absolute;
+    left:10vw;
+}
+.songName img{
+    width: 100px;
+    opacity:0;
+    transition: opacity 0s ease-in;
+
+}
